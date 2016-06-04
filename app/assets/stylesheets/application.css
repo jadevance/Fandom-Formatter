@@ -43,6 +43,14 @@
 
 /* MAIN PAGE STYLINGS */
 
+.user-image img {
+  float: left; 
+  height: 50px;
+  margin-left: 5rem;
+  margin-top: 1rem; 
+  border-radius: 2.5rem;
+
+}
 
 .fandom-formatter {
   font-family: 'Londrina Outline', cursive;
