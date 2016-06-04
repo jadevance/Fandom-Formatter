@@ -8,4 +8,8 @@ class HomeController < ApplicationController
     render :index 
   end 
 
+  def about
+
+  end 
+
 end

@@ -2,18 +2,19 @@
   Fandom Formatter
 </h1>
 <% if current_user %>
-<%= form_tag :files, {controller: 'home', action: 'create'} do %>
-  <%= label_tag :original_text, nil, :class => 'text' %><br>
-  <%= text_area_tag 'input', nil, :class => 'form-control' %>
-  <%= submit_tag("Mark it up!") %>
-  <%= submit_tag("Mark it down!") %>
-<% end %>
-<%= params %> </br> 
-<% if @file != nil %> 
-  <% if params['commit'] == "Mark it up!" %>
-    <%= markdown(@file) %> 
-  <% else %> 
-    <%= markdown(@file).html_safe %> 
+  <%= form_tag :files, {controller: 'home', action: 'create'} do %>
+    <%= label_tag :original_text, nil, :class => 'text' %><br>
+    <%= text_area_tag 'input', nil, :class => 'form-control' %>
+    <%= submit_tag("Mark it up!", :id=>"button", :class=>"Test", :name=>"submit") %>
+    <%= submit_tag("Mark it down!", :id=>"button", :class=>"Test", :name=>"submit") %>
+  <% end %>
+  <% if @file != nil %> 
+    <% if params['submit'] == "Mark it up!" %>
+      <%= markdown(@file) %> 
+    <% else %> 
+      <%= markdown(@file).html_safe %> 
+    <% end %> 
   <% end %> 
 <% end %> 
-<% end %> 
+</br> 
+<%= params %>
