@@ -14,10 +14,32 @@
  *= require_self
  */
 
- /* FONTS */
- 
-@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
-@import url(https://fonts.googleapis.com/css?family=Biryani:400,600,300);
+  /* FONTS */
+  
+ @import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
+ @import url(https://fonts.googleapis.com/css?family=Biryani:400,600,300);
+
+
+ /* DEFAULTS */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ html {
+  font-family: 'Biryani', sans-serif; 
+  font-size: 1.5rem; 
+ }
+
+a {
+  color: #00a388;
+
+  } 
+
+a:hover {
+  color: #00c3a3;
+
+}
 
 /* NAVBAR STYLINGS */
 
@@ -32,42 +54,48 @@
   color: #00c3a3;
 }
 .navbar-default .navbar-nav > li > a {
+  font-family: 'Biryani', sans-serif; 
   color: #00a388;
+  margin: .6rem;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #00c3a3;
 }
 
+.fa-home {
+  margin-left: .6rem;
+  float: left;
+  clear: both; 
+  font-size: 3rem;
 
-
-/* MAIN PAGE STYLINGS */
+}
 
 .user-image img {
-  float: left; 
   height: 50px;
-  margin-left: 5rem;
-  margin-top: 1rem; 
+  margin: .6rem;
   border-radius: 2.5rem;
 
 }
 
+/* MAIN PAGE STYLINGS */
+
+
 .fandom-formatter {
   font-family: 'Londrina Outline', cursive;
-  font-size: 5rem; 
+  font-size: 3rem; 
   font-weight: bold; 
   color: #00A388; /* southwest turquoise */
 }
 
 
-.form-control {
+/*.form-control {
 
   height: 800px;
-}
+}*/
 .text {
   font-family: 'Biryani', sans-serif; 
   font-weight: 300; 
-  font-size: 16px; 
   color: #00A388; /* southwest turquoise */
 }
 .container a {
