@@ -1,8 +1,3 @@
-/* BOOTSTRAPS */
-  
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
   /* FONTS */
   
  @import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
@@ -32,24 +27,74 @@ a:hover {
 
 /* NAVBAR STYLINGS */
 
-//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
-
 .navbar-default {
-  background-color: #dddddd;
-  border-color: #eeeeee;
+  background-color: #f0f4f2;
+  border-color: #f7f7f7;
+}
+.navbar-default .navbar-brand {
+  color: #00a388;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #00c3a3;
 }
-.navbar-default .navbar-nav > li > a {
-  font-family: 'Biryani', sans-serif; 
+.navbar-default .navbar-text {
   color: #00a388;
-  margin: .6rem;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #00a388;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #00c3a3;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #00c3a3;
+  background-color: #f7f7f7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #00c3a3;
+  background-color: #f7f7f7;
+}
+.navbar-default .navbar-toggle {
+  border-color: #f7f7f7;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #f7f7f7;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00a388;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #00a388;
+}
+.navbar-default .navbar-link {
+  color: #00a388;
+}
+.navbar-default .navbar-link:hover {
+  color: #00c3a3;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #00a388;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #00c3a3;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #00c3a3;
+    background-color: #f7f7f7;
+  }
 }
 
 .fa-home {
