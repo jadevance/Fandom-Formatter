@@ -5,8 +5,8 @@
   <%= form_tag :files, {controller: 'home', action: 'create'} do %>
     <%= label_tag :original_text, nil, :class => 'text' %><br>
     <%= text_area_tag('input', nil, cols: 160, rows: 40, :class => 'text-area') %>
-    <%= submit_tag("Mark it up!", :id=>"button", :class=>"Test", :name=>"submit") %>
-    <%= submit_tag("Mark it down!", :id=>"button", :class=>"Test", :name=>"submit") %>
+    <%= submit_tag("Mark it up!", :id=>"button", :class=>"button", :name=>"submit") %>
+    <%= submit_tag("Mark it down!", :id=>"button", :class=>"button", :name=>"submit") %>
   <% end %>
 </br>
 <p class='text'>
@@ -20,3 +20,93 @@
   <% end %> 
 <% end %> 
 </br> 
+  <div class="container">
+    <table class="table table-condensed">
+      <thead class='text'>
+        <tr>
+          <th>How to Use</th>
+          <th>Input</th>
+          <th>Markup Output</th>
+          <th>Markdown Output</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>Headings</td>
+          <td># This is H1</td>
+          <td> < H1> < /H1> </td>
+          <td> <%= markdown("# Heading").html_safe %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>## This is H2</td>
+          <td> < H2> < /H2> </td>
+          <td> <%= markdown("## Heading").html_safe %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Pattern continues to H6</td>
+          <td> < H6> < /H6> </td>
+          <td> <%= markdown("###### Heading").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Quotes</td>
+          <td>"Hello World"</td>
+          <td> < q> < /q> </td>
+          <td> <%= markdown("\"Hello World\"").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Bold</td>
+          <td>**bold**</td>
+          <td> < strong> < /strong> </td>
+          <td> <%= markdown("**bold**").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Italic</td>
+          <td>*italic*</td>
+          <td> < em> < /em> </td>
+          <td> <%= markdown("*italic*").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Bold Italic</td>
+          <td>***omgomgomg***</td>
+          <td> < strong> < em>  < /strong> < /em> </td>
+          <td> <%= markdown("***omgomgomg***").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Underline</td>
+          <td>_underline_</td>
+          <td>< u> < /u></td>
+          <td> <%= markdown("_underline_").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Stringthrough</td>
+          <td>~~because why not~~</td>
+          <td>< s> < /s></td>
+           <td> <%= markdown("~~Sweet~~ Sour").html_safe %></td>
+        </tr>
+        <tr>
+          <td>Horizontal Rule</td>
+          <td>use three or more:</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>hyphens --- </td>
+          <td> < hr></td> 
+          <td> <%= markdown("---").html_safe %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>astericks *** </td>
+          <td> < hr></td>
+          <td> <%= markdown("***").html_safe %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>underscores ___ </td>
+          <td> < hr></td>
+          <td> <%= markdown("___").html_safe %></td>
+        </tr>
+      </table>
+    </div>

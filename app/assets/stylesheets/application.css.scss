@@ -20,18 +20,21 @@
     -webkit-box-shadow: #00a388 1px 1px 1px;;
     box-shadow: #00a388 1px 1px 1px;
     outline: #00a388;
-
 }
 
 a {
   color: #00a388;
-
   } 
 
 a:hover {
   color: #00c3a3;
+  text-decoration: none; 
+}
 
-
+td {
+  font-family: 'Biryani', sans-serif; 
+  font-weight: 300; 
+  color: #00A388; /* southwest turquoise */
 }
 
 /* NAVBAR STYLINGS */
@@ -126,7 +129,6 @@ a:hover {
 
 /* MAIN PAGE STYLINGS */
 
-
 .fandom-formatter {
   font-family: 'Londrina Outline', cursive;
   font-size: 3rem; 
@@ -140,3 +142,24 @@ a:hover {
   color: #00A388; /* southwest turquoise */
 }
 
+/* ABOUT PAGE STYLINGS */
+
+.about-text { 
+  font-family: 'Biryani', sans-serif; 
+  font-weight: 300; 
+  color: #00A388; /* southwest turquoise */
+  font-size: 0.8rem;
+  padding: 0.25rem; 
+  margin-left: 1rem; 
+  margin-right: 1rem; 
+}
+
+.about-text a {
+  color: #00705e;
+
+}
+
+.about-text a:hover {
+  color: #00c3a3;
+
+}
