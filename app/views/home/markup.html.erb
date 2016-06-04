@@ -1,1 +1,3 @@
-<%= markdown(@file) %> 
+<% @file = markdown(@file) %> 
+<% @file = @file.gsub!(/(&#39;)/, "\'") %> 
+<%= @file %> 

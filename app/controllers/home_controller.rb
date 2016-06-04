@@ -22,7 +22,7 @@ class HomeController < ApplicationController
   end 
 
   def markup
-    @file = markdown(@file)
+
   end
 
   def markdown
