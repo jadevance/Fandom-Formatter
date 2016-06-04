@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+ /* FONTS */
+ 
+@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
+@import url(https://fonts.googleapis.com/css?family=Biryani:400,600,300);
+
+/* NAVBAR STYLINGS */
+
+//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+
+.navbar-default {
+  background-color: #dddddd;
+  border-color: #eeeeee;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #00c3a3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #00a388;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #00c3a3;
+}
+
+
+
+/* MAIN PAGE STYLINGS */
+
+
+.fandom-formatter {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 5rem; 
+  font-weight: bold; 
+  color: #00A388; /* southwest turquoise */
+}
+
+
+.form-control {
+
+  height: 800px;
+}
+.text {
+  font-family: 'Biryani', sans-serif; 
+  font-weight: 300; 
+  font-size: 16px; 
+  color: #00A388; /* southwest turquoise */
+}
+.container a {
+  color: #00A388; /* southwest turquoise */
+}
