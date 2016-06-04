@@ -8,17 +8,7 @@
     <%= submit_tag("Mark it up!", :id=>"button", :class=>"button", :name=>"submit") %>
     <%= submit_tag("Mark it down!", :id=>"button", :class=>"button", :name=>"submit") %>
   <% end %>
-</br>
-<p class='text'>
-</p>
-  <% if @file != nil %> 
-    <% if params['submit'] == "Mark it up!" %>
-      <%= markdown(@file) %> 
-    <% else %> 
-      <%= markdown(@file).html_safe %> 
-    <% end %> 
-  <% end %> 
-<% end %> 
+<% end%> 
 </br> 
   <div class="container">
     <table class="table table-condensed">
@@ -69,7 +59,7 @@
         <tr>
           <td>Bold Italic</td>
           <td>***omgomgomg***</td>
-          <td> < strong> < em>  < /strong> < /em> </td>
+          <td> < strong> < em>  < /em> < /strong> </td>
           <td> <%= markdown("***omgomgomg***").html_safe %></td>
         </tr>
         <tr>
