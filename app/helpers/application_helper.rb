@@ -14,6 +14,7 @@ module ApplicationHelper
       strikethrough: true,
       underline: true,
       quote: true,
+      superscript: true
     }
 
     renderer = Redcarpet::Render::HTML.new(options)
