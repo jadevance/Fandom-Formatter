@@ -28,7 +28,6 @@ gem "omniauth-google-oauth2", "~> 0.2.1"
 gem 'redis'
 gem 'kramdown'
 gem 'redcarpet'
-gem 'simple_form'
 
 
 group :development, :test do
