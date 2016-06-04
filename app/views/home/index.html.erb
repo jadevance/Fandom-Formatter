@@ -1,8 +1,19 @@
-<h1>
-  Welcome to Fandom Formatter!
+<h1 class='fandom-formatter'>
+  Fandom Formatter
 </h1>
 <% if current_user %>
-<h2>
-  You are currently logged in as <%= current_user.name %> 
-</h2>
+<%= form_tag :files, {controller: 'home', action: 'create'} do %>
+  <%= label_tag :original_text, nil, :class => 'text' %><br>
+  <%= text_area_tag 'input', nil, :class => 'form-control' %>
+  <%= submit_tag("Mark it up!") %>
+  <%= submit_tag("Mark it down!") %>
+<% end %>
+<%= params %> </br> 
+<% if @file != nil %> 
+  <% if params['commit'] == "Mark it up!" %>
+    <%= markdown(@file) %> 
+  <% else %> 
+    <%= markdown(@file).html_safe %> 
+  <% end %> 
+<% end %> 
 <% end %> 
