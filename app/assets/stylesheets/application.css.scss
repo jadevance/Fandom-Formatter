@@ -15,6 +15,14 @@
   font-size: 1.5rem; 
  }
 
+.text-area:focus{
+    border-color: #00a388;
+    -webkit-box-shadow: #00a388 1px 1px 1px;;
+    box-shadow: #00a388 1px 1px 1px;
+    outline: #00a388;
+
+}
+
 a {
   color: #00a388;
 
@@ -22,6 +30,7 @@ a {
 
 a:hover {
   color: #00c3a3;
+
 
 }
 
@@ -41,8 +50,11 @@ a:hover {
 .navbar-default .navbar-text {
   color: #00a388;
 }
+
 .navbar-default .navbar-nav > li > a {
+  font-family: 'Biryani', sans-serif; 
   color: #00a388;
+  margin: .6rem;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -127,3 +139,4 @@ a:hover {
   font-weight: 300; 
   color: #00A388; /* southwest turquoise */
 }
+

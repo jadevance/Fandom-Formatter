@@ -4,12 +4,12 @@
 <% if current_user %>
   <%= form_tag :files, {controller: 'home', action: 'create'} do %>
     <%= label_tag :original_text, nil, :class => 'text' %><br>
-    <%= text_area_tag('input', nil, cols: 160, rows: 40) %>
+    <%= text_area_tag('input', nil, cols: 160, rows: 40, :class => 'text-area') %>
     <%= submit_tag("Mark it up!", :id=>"button", :class=>"Test", :name=>"submit") %>
     <%= submit_tag("Mark it down!", :id=>"button", :class=>"Test", :name=>"submit") %>
   <% end %>
+</br>
 <p class='text'>
-New Text
 </p>
   <% if @file != nil %> 
     <% if params['submit'] == "Mark it up!" %>
